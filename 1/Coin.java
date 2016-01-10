@@ -9,15 +9,18 @@ import java.util.*;
 public class Coin {
 	//private enum side {"heads","tails"};
 	private String sideUp;
-	public String randomDecide() {
-		
-		//int randomVal = new Random().nextInt(2);
+	private void Coin() {
 		double randomVal = Math.random();
 		if (randomVal < 0.5) {
 			sideUp = "heads";
 		} else {
 			sideUp = "tails";
 		}
+	}
+	public void toss() {
+		Coin();
+	}
+	public String getSideUp() {
 		return sideUp;
 	}
 }
