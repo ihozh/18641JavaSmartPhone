@@ -7,9 +7,10 @@
 
 public class CarTest {
 	public static void main(String[] args) {
+		CarTest carTest = new CarTest();
 		ParkedCar cara = new ParkedCar("A","b","r","001",5);
 		//ParkedCar carb = new ParkedCar("B","b","b","002",8);
-		PoliceOfficer wr = new PoliceOfficer("wr","001");
+		PoliceOfficer wr = new PoliceOfficer("dick","001");
 		for(int i=0;i<5000000;i++){
 
 		}
@@ -24,9 +25,12 @@ public class CarTest {
 		}
 		if (wr.checkStatus(cara) != null) {
 			ticketa = wr.checkStatus(cara);
-			System.out.println(ticketa.reportMake());
-			System.out.println(ticketa.reportModel());
-			System.out.println(ticketa.calFine());
+			carTest.reportTicket(ticketa);
 		}
+	}
+	public void reportTicket(ParkingTicket ticket) {
+		System.out.println(ticket.reportMake()+" "+ticket.reportModel()+" "+ticket.reportColor()+ticket.reportLicenseNum());
+		System.out.println("Over time "+ticket.reportOverTime());
+		System.out.println(ticket.reportName()+" "+ticket.reportBadgeNum());
 	}
 }

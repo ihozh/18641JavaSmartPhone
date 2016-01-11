@@ -10,16 +10,23 @@ public class PoliceOfficer {
 	private String badgeNum;
 	private ParkingTicket parkingTicket;
 	private boolean timeOut = false;
+	public PoliceOfficer() {
+
+	}
 	public PoliceOfficer(String name,String badgeNum) {
 		this.name = name;
 		this.badgeNum = badgeNum;
 		//parkingTicket = new ParkingTicket();
 	}
+	public void addPoliceOfficer(String name,String badgeNum) {
+		this.name = name;
+		this.badgeNum = badgeNum;
+	}
 	public ParkingTicket checkStatus(ParkedCar parkedCar) {
 		if(parkedCar.getParkingTime()>parkedCar.getPurchaseTime()) {
 			timeOut = true;
 			parkingTicket = new ParkingTicket();
-			parkingTicket.addCarToTicket(parkedCar);
+			parkingTicket.addCarToTicket(parkedCar,name,badgeNum);
 			//System.out.println("Ticket out");
 		} else {
 			timeOut = false;
