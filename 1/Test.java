@@ -10,7 +10,7 @@ public class Test {
 		System.out.println("the initial facing up is "+coin.getSideUp());
 		int heads = 0;
 		int tails = 0;
-		for (int i = 0;i<20;i++) {
+		for (int i = 1;i<=20;i++) {
 			coin.toss();
 			if (coin.getSideUp() == "heads") {
 				heads++;

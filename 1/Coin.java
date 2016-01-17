@@ -7,10 +7,13 @@
 
 import java.util.*;
 public class Coin {
-	//private enum side {"heads","tails"};
 	private String sideUp;
-	private void Coin() {
-		double randomVal = Math.random();
+	private double randomVal;
+	public Coin() {
+		decideSide();
+	}
+	private void decideSide() {
+		randomVal = Math.random();
 		if (randomVal < 0.5) {
 			sideUp = "heads";
 		} else {
@@ -18,7 +21,7 @@ public class Coin {
 		}
 	}
 	public void toss() {
-		Coin();
+		decideSide();
 	}
 	public String getSideUp() {
 		return sideUp;
