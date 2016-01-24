@@ -12,7 +12,6 @@ public class CarTest {
 		//ParkedCar carb = new ParkedCar("B","b","b","002",8);
 		PoliceOfficer wr = new PoliceOfficer("dick","001");
 		for(int i=0;i<5000000;i++){
-
 		}
 		ParkingTicket ticketa = new ParkingTicket();
 		if (wr.checkStatus(cara) != null) {
