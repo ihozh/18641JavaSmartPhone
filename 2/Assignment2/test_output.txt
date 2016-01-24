@@ -18,23 +18,3 @@ Stud           Qu1   Qu2   Qu3   Qu4   Qu5
 High Score     100   100   100   90    80    
 Low Score      0     7     0     32    10    
 Average        46.2  42.3  70.5  75.7  49.7  
-
-test Student41.txt
-yihez.assignment2.exception.StudentNumberException: Too many students
-	at yihez.assignment2.util.Util.readFile(Util.java:71)
-	at yihez.assignment2.Driver.main(Driver.java:25)
-
-test StudentMore40.txt
-yihez.assignment2.exception.StudentNumberException: Too many students
-	at yihez.assignment2.util.Util.readFile(Util.java:71)
-	at yihez.assignment2.Driver.main(Driver.java:27)
-
-test StudentWrongLine2.txt
-yihez.assignment2.exception.QuizNumberException: quiz number is wrong at 3's line
-	at yihez.assignment2.util.Util.readFile(Util.java:62)
-	at yihez.assignment2.Driver.main(Driver.java:30)
-
-test StudentScoreWarning.txt
-yihez.assignment2.exception.QuizScoreException: wrong score of student:2134
-	at yihez.assignment2.util.Util.readFile(Util.java:54)
-	at yihez.assignment2.Driver.main(Driver.java:32)
